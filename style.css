@@ -1,0 +1,94 @@
+/* Element Selectors */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: brown;
+}
+
+p {
+    color: black;
+}
+
+img {
+    width: 250px;
+    border: 1px solid black;
+}
+
+/* Class Selector */
+.note {
+    background-color: lightgray;
+    padding: 5px;
+}
+
+/* ID Selector */
+#title {
+    text-decoration: underline;
+}
+
+/* Grouping Selector */
+h2, p, li {
+    margin-left: 10px;
+}
+
+/* Descendant Selector */
+div p {
+    color: darkgreen;
+}
+
+/* Child Selector */
+div > ul > li {
+    color: purple;
+}
+
+/* Attribute Selectors */
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+input[type="password"] {
+    border: 2px solid red;
+}
+
+input[type="email"] {
+    border: 2px solid green;
+}
+
+input[type="submit"] {
+    background-color: gray;
+    color: white;
+}
+
+/* Pseudo Class */
+a:hover {
+    color: red;
+}
+
+/* First and Last Child */
+ul li:first-child {
+    font-weight: bold;
+}
+
+ul li:last-child {
+    font-style: italic;
+}
+
+/* Pseudo Elements */
+.heading::before {
+    content: "* ";
+}
+
+.heading::after {
+    content: " *";
+}
+
+.demo::first-letter {
+    font-size: 24px;
+    color: blue;
+}
